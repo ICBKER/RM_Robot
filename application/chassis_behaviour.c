@@ -353,7 +353,7 @@ void chassis_behaviour_control_set(fp32 *vx_set, fp32 *vy_set, fp32 *angle_set, 
     {
         chassis_open_set_control(vx_set, vy_set, angle_set, chassis_move_rc_to_vector);
     }
-		    else if (chassis_behaviour_mode == CHASSIS_VECTOR_FOLLOW_GIMBAL_YAW)
+		    else if (chassis_behaviour_mode == CHASSIS_LITTLE_GRYO)
     {
         chassis_little_gyro_control(vx_set, vy_set, angle_set, chassis_move_rc_to_vector);
     }
